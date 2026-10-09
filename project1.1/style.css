@@ -1,0 +1,211 @@
+/* #EFF6FF #EFF6FF (фон)
+ #2A4A5C (базовый текст)
+#255A9B  (кнопка fb)
+#0076B6  (кнопка in)
+#3698FB (кнопка Create Account)
+#7B8A92 (тексты Title - "Get iintoo it today" и "What type of investor are you?")
+#96A5B1 (тексты подзаголовков)
+#AFAFAF (серый текст email, phone, подсказка и т.д)
+#EEEEEE (рамки для input)
+#FFFFFF (белый) */
+
+body {
+  background-color: #eff6ff;
+  font-family: "barlow", sans-serif;
+}
+
+.right-container {
+  background-color: white;
+  padding: 100px 130px;
+  width:50%;
+}
+
+h1 {
+  color: #2a4a5c;
+}
+p {
+  color: #96a5b1;
+}
+
+.buttons {
+  margin: 30px 0 30px 0;
+  display: flex;
+justify-content: space-between;
+gap:50px;
+
+}
+button.fb {
+  background-color: #255a9b;
+  padding: 10px;
+  color: white;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  width:200px;
+  
+}
+button.linked {
+  background-color: #0076b6;
+  padding: 10px;
+  color: white;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  width:200px;
+}
+
+
+.emailphone {
+   margin: 30px 0 30px 0;
+  display: flex;
+justify-content: space-between;
+gap:50px;
+}
+.emailcontainer {
+    border:1px solid #e3dcdc;
+    width:200px;
+    font-size: small;
+    justify-content: space-between;
+}
+
+.emailphone label {
+    color:#afafaf;
+    display:flex;
+    flex-direction: column;
+    padding:2%;
+    
+}
+.emailcontainer input {
+  border:none;
+  width:196px;
+  outline: none;
+  
+}
+
+  .emailcontainer:focus-within{
+    border-left: 2px solid rgb(5, 133, 202);
+  }
+  
+ .phonecontainer:focus-within{
+    border-left: 2px solid rgb(5, 133, 202);
+  }
+
+
+.phonecontainer{
+    border:1px solid #e3dcdc;
+    width:200px;
+    font-size: small;
+}
+.phonecontainer input {
+  border:none;
+  width:196px;
+  outline: none;
+}
+
+.question {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.question h2 {
+  color: #2a4a5c;
+}
+
+.terms{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.new {
+  color: #afafaf;
+  display: flex;
+    flex-direction: column;
+}
+
+#checkbox:checked + .new label {
+    color: black;
+}
+
+.acc button {
+  color: white;
+  background-color: #3698fb;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin-top:60px;
+}
+
+main {
+  display: flex;
+  padding:4rem;
+}
+
+.left-container {
+    width:50%;
+    position:relative;
+}
+
+#logo {
+    position:absolute;
+    left:3rem;
+    top:3rem;
+    width:150px;
+}
+
+.select span{
+    color:#afafaf;
+    font-size: 12px;
+   
+}
+
+.line-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.line1{
+  width:100px;
+  height:1px;
+  background-color: #d9dee2;
+  transform: translateX(70%);
+  
+}
+.line2{
+  width:100px;
+  height:1px;
+  background-color: #d9dee2;
+  transform: translateX(-70%);
+}
+
+.or {
+   display: flex;
+   justify-content: space-around;
+   font-size: x-small;
+   font-weight: bold;
+   color:#afafaf
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option-1 {
+  padding:5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-2 {
+  padding:5px;
+}
+
+.option-3 {
+  padding:5px;
+}
+
+.option-4 {
+  padding:5px;
+}
+
